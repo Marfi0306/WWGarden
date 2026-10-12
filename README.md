@@ -36,3 +36,7 @@ Zobacz [listę danych do uruchomienia](docs/LAUNCH.md). `npm run build:productio
 Po zatwierdzeniu produkcyjny formularz wysyła standardowy multipart POST do skonfigurowanego endpointu. Backend jest osobną integracją: musi obsłużyć pliki, walidację, ochronę przed spamem, retencję, błędy i stronę potwierdzenia. Sam projekt nie tworzy skrzynki odbiorczej ani magazynu danych.
 
 GitHub Actions uruchamia testy i tworzy artefakt podglądu. Nie wdraża automatycznie strony do internetu.
+
+## Podgląd Vercel
+
+Repozytorium zawiera `vercel.json`: build `npm run build`, katalog wyjściowy `dist`, katalogowe adresy podstron i nagłówek `X-Robots-Tag: noindex, nofollow`. Importuj repozytorium do Vercela jako framework **Other**. Wdrożenie zachowuje tryb podglądu niezależnie od nazwy środowiska Vercela — formularz nie wysyła danych. Docelowe uruchomienie wymaga osobnej zmiany konfiguracji po uzupełnieniu danych z `docs/LAUNCH.md`.
