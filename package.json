@@ -1,0 +1,6 @@
+{
+  "name": "ww-garden-service", "version": "1.0.0", "private": true,
+  "description": "Strona WW Garden Service — lokalne usługi ogrodnicze",
+  "type": "module", "engines": {"node": ">=22"},
+  "scripts": {"dev": "node scripts/serve.mjs", "build": "node scripts/build.mjs", "build:production": "node scripts/build.mjs --production", "test": "node --test"}
+}
